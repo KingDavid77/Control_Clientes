@@ -24,8 +24,8 @@
                         <input type="text" class="form-control" name="apellido" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>                        
-                        <input type="email" class="form-control" name="email" required>
+                        <label for="email">Email</label>  
+                        <input type="email" class="form-control" name="email" required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">
                     </div>
                     <div class="form-group">
                         <label for="telefono">Tel&eacute;fono</label>                        
