@@ -24,7 +24,7 @@ public class ClienteDaoJDBC {
                                                             "telefono, " + 
                                                             "saldo " + 
                                                    "FROM " + 
-                                                            "cliente" + 
+                                                            "cliente " + 
                                                    "WHERE " + 
                                                             "id_cliente = ?";
     
@@ -117,9 +117,9 @@ public class ClienteDaoJDBC {
             rs = stmt.executeQuery();
             /*
             Para posicionarnos en el registro en dado caso de que este haya sido devuelto un valor,
-            utilizamos el metodo absolute he indicamos el registro en el cual queremos posicionarnos
+            utilizamos el metodo next, ya que este avanza a la primer fila de los registros encontrados en este caso solo uno
             */
-            rs.absolute(1); //Nos posiciona en el primer registro devuelto
+            rs.next(); //Nos posiciona en el primer registro devuelto
             
             //Una vez que nos posicionamos en ese registro, recuperamos los elementos, ha excepcion del idCliente
             String nombre = rs.getString("nombre");
@@ -227,7 +227,7 @@ public class ClienteDaoJDBC {
         int rows = 0;         
         /*
         En este caso no se utiliza el ResultSet ya que ahora no vamos a recuperar informacion, si
-        no que ahora se va a actualizar
+        no que ahora se va a actualizar(eliminar)
         */
         
         try {             

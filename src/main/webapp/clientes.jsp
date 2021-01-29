@@ -19,19 +19,19 @@
     </head>
     <body>
         <!-- Cabecero TOP -->
-        <jsp:include page="WEB-INF/paginas/comunes/cabecero.jsp" />
+        <jsp:include page="/WEB-INF/paginas/comunes/cabecero.jsp" />
         <!-- Cabecero DOWN -->
 
         <!-- Botones de navegación TOP -->
-        <jsp:include page="WEB-INF/paginas/comunes/botonesNavegacion.jsp" />        
+        <jsp:include page="/WEB-INF/paginas/comunes/botonesNavegacion.jsp" />        
         <!-- Botones de navegación DOWN -->
 
         <!-- Listado de Clientes TOP -->
-        <jsp:include page="WEB-INF/paginas/cliente/listadoClientes.jsp" />
+        <jsp:include page="/WEB-INF/paginas/cliente/listadoClientes.jsp" />
         <!-- Listado de Clientes DOWN -->
 
         <!-- Pie de pagina TOP -->
-        <jsp:include page="WEB-INF/paginas/comunes/pieDePagina.jsp" />
+        <jsp:include page="/WEB-INF/paginas/comunes/pieDePagina.jsp" />
         <!-- Pie de pagina DOWN -->
 
 

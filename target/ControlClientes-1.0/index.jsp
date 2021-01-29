@@ -9,4 +9,4 @@
   al Servlet Controlador
 -->
 
-<meta http-equiv="refresh" content="0;url=${pageContext.request.contextPath}/ListarClientes">
+<meta http-equiv="refresh" content="0;url=${pageContext.request.contextPath}/ClienteControlador">

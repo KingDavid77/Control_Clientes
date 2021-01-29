@@ -9,15 +9,18 @@ public class Conexion {
     private static final String JDBC_URL = "jdbc:mysql://localhost:3306/control_clientes?useSSL=false&useTimezone=true&serverTimezone=UTC&allowPublicKeyRetrieval=true";
     private static final String JDBC_USER = "root";
     private static final String JDBC_PASSWORD = "admin1234";
+    private static BasicDataSource dataSource;
     
     //Metodo que recupera una conexion a la BD
     public static DataSource getDataSource(){
-        BasicDataSource dataSource = new BasicDataSource();
-        dataSource.setUrl(JDBC_URL);
-        dataSource.setUsername(JDBC_USER);
-        dataSource.setPassword(JDBC_PASSWORD);
-        //Definimos el tamaño inicial de Pool de Conexiones
-        dataSource.setInitialSize(50);
+        if(dataSource == null){            
+            dataSource = new BasicDataSource(); 
+            dataSource.setUrl(JDBC_URL);
+            dataSource.setUsername(JDBC_USER);
+            dataSource.setPassword(JDBC_PASSWORD);
+            //Definimos el tamaño inicial de Pool de Conexiones
+            dataSource.setInitialSize(50);
+        }
         return dataSource;
     }
     

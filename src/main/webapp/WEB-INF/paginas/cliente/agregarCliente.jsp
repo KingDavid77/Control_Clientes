@@ -13,7 +13,7 @@
                     <span>&times;</span>
                 </button>
             </div>
-            <form action="${pageContext.request.contextPath}/ListarClientes?accion=insertar" method="post" class="was-validated">
+            <form action="${pageContext.request.contextPath}/ClienteControlador?accion=insertar" method="post" class="was-validated">
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="nombre">Nombre</label>                        
@@ -33,7 +33,7 @@
                     </div>
                     <div class="form-group">
                         <label for="saldo">Saldo</label>                        
-                        <input type="number" class="form-control" name="saldo" required>
+                        <input type="number" class="form-control" name="saldo" required step="any">
                     </div>
                 </div>
                 <div class="modal-footer">
